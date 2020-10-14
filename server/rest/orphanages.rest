@@ -1,0 +1,61 @@
+
+### INDEX
+GET {{baseUrl}}/orphanages/
+
+### SHOW
+GET {{baseUrl}}/orphanages/5/
+
+### CREATE
+POST {{baseUrl}}/orphanages/
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="name"
+
+Lar das Meninas
+--MyBoundary
+Content-Disposition: form-data; name="latitude"
+
+-27.21,
+--MyBoundary
+Content-Disposition: form-data; name="longitude"
+
+-49.62,
+--MyBoundary
+Content-Disposition: form-data; name="about"
+
+Sobre o orfanato",
+--MyBoundary
+Content-Disposition: form-data; name="instructions"
+
+venha visitar",
+--MyBoundary
+Content-Disposition: form-data; name="opening_hours"
+
+Das 8h ás 18h",
+--MyBoundary
+Content-Disposition: form-data; name="open_on_weekends"
+
+true
+--MyBoundary
+Content-Disposition: form-data; name="images"; filename="lar1.jpg"
+Content-Type: application/octet-stream
+
+< ./tmp/lar1.jpg
+--MyBoundary
+Content-Disposition: form-data; name="images"; filename="lar2.jpg"
+Content-Type: application/octet-stream
+
+< ./tmp/lar2.jpg
+--MyBoundary--
+
+###
+# {
+#   "name": "Lar das meninas",
+#   "latitude": -27.21,
+#   "longitude": -49.62,
+#   "about": "Sobre o orfanato",
+#   "instructions": "venha visitar",
+#   "opening_hours": "das 8h as 18h",
+#   "open_on_weekends": true
+# }
