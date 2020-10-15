@@ -16,23 +16,23 @@ Lar das Meninas
 --MyBoundary
 Content-Disposition: form-data; name="latitude"
 
--27.21,
+-20.678792
 --MyBoundary
 Content-Disposition: form-data; name="longitude"
 
--49.62,
+-40.506961
 --MyBoundary
 Content-Disposition: form-data; name="about"
 
-Sobre o orfanato",
+Sobre o orfanato
 --MyBoundary
 Content-Disposition: form-data; name="instructions"
 
-venha visitar",
+venha visitar
 --MyBoundary
 Content-Disposition: form-data; name="opening_hours"
 
-Das 8h ás 18h",
+Das 8h ás 18h
 --MyBoundary
 Content-Disposition: form-data; name="open_on_weekends"
 
